@@ -1,0 +1,17 @@
+{
+  "apps" : [{
+    "name"        : "Generator-MVP",
+    "script"      : "boot/app/app.js",
+    "args"        : [],
+    "error_file": "/srv/generator-mvp/logs/error.log",
+    "out_file": "/srv/generator-mvp/logs/info.log",
+    "ignore_watch" : ["node_modules"],
+    "watch"       : false,
+    "cwd"         : "/srv/generator-mvp/server",
+    "env": {
+      "NODE_ENV": "production",
+      "HOST": "127.0.0.1",
+      "PORT": "9028"
+    }
+  }]
+}

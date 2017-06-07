@@ -1,0 +1,239 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "globalReturn": false
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "promise"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": 1,
+        "FunctionExpression": {"parameters": "first"}
+      }
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {"allowSingleLine": true}
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "varsIgnorePattern": "[iI]gnored"
+      }
+    ],
+    "object-shorthand": [
+      "error",
+      "always"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {"requireForBlockBody": true}
+    ],
+    "prefer-arrow-callback": [
+      "error"
+    ],
+    "array-callback-return": [
+      "error"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "camelcase": [
+      "error",
+      {"properties": "always"}
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "no-useless-concat": [
+      "error"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "no-const-assign": [
+      "error"
+    ],
+    "react/no-deprecated": [
+      "error"
+    ],
+    "react/no-direct-mutation-state": [
+      "error"
+    ],
+    "react/no-did-mount-set-state": [
+      "error"
+    ],
+    "react/jsx-uses-react": [
+      "error"
+    ],
+    "react/jsx-uses-vars": [
+      "error"
+    ],
+    "react/jsx-indent": [
+      "error",
+      2
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "react/jsx-no-duplicate-props": [
+      "error"
+    ],
+    "react/jsx-space-before-closing": [
+      "error"
+    ],
+    "react/jsx-wrap-multilines": [
+      "error"
+    ],
+    "react/jsx-key": [
+      "error"
+    ],
+    "react/jsx-equals-spacing": [
+      "error",
+      "never"
+    ],
+    "react/jsx-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "react/prefer-es6-class": [
+      "error",
+      "always"
+    ],
+    "react/no-did-update-set-state": [
+        "error"
+    ],
+    "react/prop-types": [
+      "error"
+    ],
+    "react/jsx-closing-bracket-location": [
+      "error",
+      "tag-aligned"
+    ],
+    "react/no-string-refs": [
+      "error"
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "no-else-return": [
+      "error"
+    ],
+    "no-extra-bind": [
+      "error"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "space-in-parens": [
+      "error"
+    ],
+    "arrow-spacing": [
+      "error"
+    ],
+    "no-duplicate-imports": [
+      "error"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "template-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "promise/param-names": [
+      "error"
+    ],
+    "promise/no-native": [
+      "error"
+    ],
+    "promise/catch-or-return": [
+      "warn",
+      {"allowThen": true}
+    ],
+    "space-before-blocks": [
+      "error",
+      "always"
+    ],
+    "prefer-const": [
+      "error"
+    ],
+    "constructor-super": [
+      "error"
+    ],
+    "padded-blocks": [
+      "error",
+      "never"
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false,
+        "afterColon": true,
+        "mode": "strict"
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "computed-property-spacing": [
+      "error",
+      "never"
+    ],
+    "no-catch-shadow": [
+      "error"
+    ]
+  }
+}

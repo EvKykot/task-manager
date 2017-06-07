@@ -1,0 +1,132 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["promise"],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": 1,
+        "FunctionExpression": {"parameters": "first"}
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {"allowSingleLine": true}
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "object-shorthand": [
+      "error",
+      "always"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {"requireForBlockBody": true}
+    ],
+    "prefer-arrow-callback": [
+      "error"
+    ],
+    "array-callback-return": [
+      "error"
+    ],
+    "no-magic-numbers": [
+      "warn",
+      {
+        "ignore": [0, -1, 1],
+        "ignoreArrayIndexes": true
+      }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "camelcase": [
+      "error",
+      {"properties": "always"}
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "no-useless-concat": [
+      "error"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "no-const-assign": [
+      "error"
+    ],
+    "max-len": [
+      "error",
+      160
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "no-else-return": [
+      "error"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "space-before-blocks": [
+      "error"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "space-in-parens": [
+      "error"
+    ],
+    "arrow-spacing": [
+      "error"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "template-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "promise/param-names": [
+      "error"
+    ],
+    "promise/catch-or-return": [
+      "warn"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+.footerWrap {
+  position: absolute;
+  z-index: auto;
+  left: 0;
+  bottom: 0;
+  height: $footerHeight;
+  width: 100%;
+  text-align: center;
+  background-color: #176ab0;
+  color: #fff;
+  .copyright {
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #fff;
+    line-height: $footerHeight;
+    text-align: center;
+  }
+}

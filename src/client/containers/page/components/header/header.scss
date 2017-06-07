@@ -1,0 +1,48 @@
+@import '../../../root/constants.scss';
+
+.headerWrap {
+  position: relative;
+  height: $headerHeight;
+  background-color: #176ab0;
+  color: #fff;
+  
+  .headerLogo {
+    width: 30%;
+    text-align: center;
+  }
+
+  .headerNav {
+    text-align: right;
+    float: right;
+    width: 70%;
+  }
+}
+
+.headerLogo,
+.headerNav,
+.headerNavLink {
+  position: relative;
+  display: inline-block;
+}
+
+.tagline,
+.headerNavLink {
+  font-family: helvetica;
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #fff;
+  line-height: $headerHeight;
+}
+
+.tagline {
+  margin: 0;
+}
+.headerNavLink {
+  font-size: 1.0em;
+  margin: 0 10px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.headerNavLink:hover {
+  color: $color-primary-lighten
+}

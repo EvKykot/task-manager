@@ -1,0 +1,89 @@
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #fff inset;
+}
+
+.root {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  min-width: 1024px;
+  margin-top: 0px;
+}
+
+
+.block {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  padding-bottom: 0px;
+  padding-top: 40px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-family: helvetica, serif;
+  color: #4f728a;
+}
+
+.login {
+  display: inline-block;
+  width: 30%;
+  margin: 3% 4% 0 16%;
+  vertical-align: top;
+}
+
+.signup {
+  display: inline-block;
+  width: 30%;
+  margin: 3% 16% 0 4%;
+  vertical-align: top;
+}
+
+.content {
+  padding: 0 24px 12px;
+  border: 1px solid #cfd8dc;
+}
+
+.btnCnt {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.btn-left {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 240px;
+}
+
+.button {
+  background: #4f728a !important;
+  color: #fff !important;
+}
+
+.btn-left {
+  padding-top: 8px;
+}
+
+.forgot-password {
+  color: #4f728a;
+  font-size: 12px;
+}
+
+.forgot-password-field {
+  padding: 0 24px 12px;
+  border: 1px solid #cfd8dc;
+}

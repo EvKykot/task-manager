@@ -1,0 +1,6 @@
+{
+  "bundle.task-manager": {
+    "js": "/scripts/bundle.generator-mvp.js",
+    "css": "/scripts/bundle.generator-mvp.css"
+  }
+}
