@@ -15,9 +15,14 @@ const Note = MDB.collection({
   create: ($, data) => {
     const note = {
       _id: new ObjectId(),
-      title     : data.title,
-      text      : data.text,
-      color     : data.color
+      title: data.title,
+      text: data.text,
+      color: data.color,
+      startTime: null,
+      endTime: null,
+      elapsed: 0,
+      runningTimer: false,
+      done: false,
     };
 
     return $
@@ -36,11 +41,7 @@ const Note = MDB.collection({
   update: ($, params) => {
     const sQuery = {_id: new ObjectId(params._id)};
 
-    const updatedNote = {
-      title     : params.title,
-      text      : params.text,
-      color     : params.color
-    };
+    const updatedNote = params.updateParams;
     return $
       .findOneAndUpdate(sQuery, updatedNote, { returnOriginal: false })
       .then((res) => res.value)

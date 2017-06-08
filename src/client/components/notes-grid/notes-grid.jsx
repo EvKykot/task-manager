@@ -13,7 +13,8 @@ export default class NotesGrid extends React.Component {
   displayNotes(arr) {
     const {
       handleDeleteNote,
-      handleStartCorrectNote
+      handleStartCorrectNote,
+      handleSaveCorrectedNote
     } = this.props;
 
     return arr.map((row, ind) =>
@@ -23,8 +24,10 @@ export default class NotesGrid extends React.Component {
         color={row.color}
         text={row.text}
         _id={row._id}
+        dataNotes={row}
         handleDeleteNote={handleDeleteNote}
         handleStartCorrectNote={handleStartCorrectNote}
+        handleSaveCorrectedNote={handleSaveCorrectedNote}
       />
     )
   }

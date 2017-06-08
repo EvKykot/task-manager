@@ -29,7 +29,7 @@ export default class Notes extends React.Component {
           dataNotes={dataNotes}
           handleDeleteNote={handleDeleteNote}
           handleStartCorrectNote={handleStartCorrectNote}
-
+          handleSaveCorrectedNote={handleSaveCorrectedNote}
         />
       </div>
     );
