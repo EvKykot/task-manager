@@ -33,7 +33,6 @@ const NotesController = {
 
     Note.update(params)
       .then((note) => {
-        note;
         res.json(note)
       })
       .catch(err => next(err));
