@@ -40,10 +40,10 @@ const Note = MDB.collection({
   },
   update: ($, params) => {
     const sQuery = {_id: new ObjectId(params._id)};
+    const uQuery = {$set: params.updateParams};
 
-    const updatedNote = params.updateParams;
     return $
-      .findOneAndUpdate(sQuery, updatedNote, { returnOriginal: false })
+      .findOneAndUpdate(sQuery, uQuery, { returnOriginal: false })
       .then((res) => res.value)
       .catch(err => {
         console.log(err);
