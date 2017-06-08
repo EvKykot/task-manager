@@ -96,7 +96,6 @@ export default function (state = initialState, action) {
     }
 
     case SAVE_CORRECTED_NOTE: {
-      console.log(action.body);
       return Object.assign({}, state, {
         dataNotes: updateNote(state.dataNotes, action.body),
         noteInCorrectionProcess: Object.assign({}, state.noteInCorrectionProcess, {

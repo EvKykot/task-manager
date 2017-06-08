@@ -26,18 +26,24 @@ export default class Note extends React.Component {
 
     this.handleStartTime = this.handleStartTime.bind(this);
     this.handlePauseTime = this.handlePauseTime.bind(this);
-    this.handleStopTime = this.handleStopTime.bind(this);
+    this.handleRefreshTime = this.handleRefreshTime.bind(this);
     this.tick = this.tick.bind(this);
     this.updateNote = this.updateNote.bind(this);
   }
 
   componentDidMount() {
-    const {
+    const {runningTimer, startTime, elapsed, lastTick} = this.state;
 
-    } = this.state;
+    if (runningTimer) {
+      let updateLastTick = elapsed + (Date.now() - startTime);
+
+      this.setState({
+        elapsed: updateLastTick,
+        lastTick: Date.now()
+      });
+    }
+
     this.timeInterval = setInterval(this.tick, 1000);
-
-    if ()
   }
 
   componentWillUnmount() {
@@ -71,27 +77,25 @@ export default class Note extends React.Component {
 
   handlePauseTime() {
     this.setState({
-      runningTimer: false
+      runningTimer: false,
     }, () => {
       this.updateNote(this.state);
     })
   }
 
-  handleStopTime() {
+  handleRefreshTime() {
     this.setState({
       runningTimer: false,
       elapsed: 0,
       lastTick: 0,
-      startTime,
-      endTime,
-      done
+      startTime: null,
+      endTime: null
     }, () => {
       this.updateNote(this.state);
     })
   }
 
   updateNote(updateState) {
-    console.log(updateState);
     const {
       handleSaveCorrectedNote,
       title,
@@ -117,8 +121,7 @@ export default class Note extends React.Component {
       color,
       _id
     };
-console.log(updatedNote);
-    console.log(handleSaveCorrectedNote);
+
     handleSaveCorrectedNote(updatedNote);
   }
 
@@ -174,8 +177,8 @@ console.log(updatedNote);
 
             }
 
-            <span onClick={this.handleStopTime}>
-              <img src="../../images/ic_stop_black_18px.svg"/>
+            <span onClick={this.handleRefreshTime}>
+              <img src="../../images/ic_loop_black_18px.svg"/>
             </span>
 
           </div>

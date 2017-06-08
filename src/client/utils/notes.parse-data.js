@@ -22,6 +22,5 @@ export const updateNote = (arr, updateElem) => {
   updateArr = arr;
   index = _.findIndex(arr, (elem) => elem._id === updateElem._id);
   updateArr[index] = updateElem;
-  console.log(updateArr);
   return updateArr;
 };

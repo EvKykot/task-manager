@@ -46,7 +46,6 @@ class HomeWrap extends React.Component {
   }
 
   handleSaveCorrectedNote(correctedNote) {
-    console.log(correctedNote);
     const {dispatch} = this.props;
     dispatch(saveCorrectedNote(correctedNote));
   }
